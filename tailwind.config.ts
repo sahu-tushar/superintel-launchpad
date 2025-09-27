@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // AI-specific colors
+        "ai-blue": "hsl(var(--ai-blue))",
+        "ai-purple": "hsl(var(--ai-purple))",
+        "ai-cyan": "hsl(var(--ai-cyan))",
+        "neural-pink": "hsl(var(--neural-pink))",
       },
       borderRadius: {
         lg: "var(--radius)",
