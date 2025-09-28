@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import FeaturesGrid from "./components/FeaturesGrid";
 import EmailSubscription from "./components/EmailSubscription";
+import AgenticAIPlayground from "./pages/AgenticAIPlayground";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/agentic-ai-playground" element={<AgenticAIPlayground />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

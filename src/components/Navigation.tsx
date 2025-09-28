@@ -31,7 +31,7 @@ const Navigation = () => {
               >
                 Home
               </a>
-              <DropdownMenu>
+                <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="flex items-center gap-1">
                     Our Products
@@ -39,7 +39,9 @@ const Navigation = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem>Agentic AI Builder Playground</DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/agentic-ai-playground">Agentic AI Builder Playground</a>
+                  </DropdownMenuItem>
                   <DropdownMenuItem>Agentic AI Pilot Accelerator Suite</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -85,7 +87,7 @@ const Navigation = () => {
               <p className="text-sm font-medium text-muted-foreground mb-2">Our Products</p>
               <div className="pl-4 space-y-1">
                 <a
-                  href="#product1"
+                  href="/agentic-ai-playground"
                   className="text-foreground hover:text-ai-purple block py-1 text-sm"
                 >
                   Agentic AI Builder Playground
