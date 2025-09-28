@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import FeaturesGrid from "./components/FeaturesGrid";
 import EmailSubscription from "./components/EmailSubscription";
 import AgenticAIPlayground from "./pages/AgenticAIPlayground";
+import AgenticAIBusinessPilotAccelerators from "./pages/AgenticAIBusinessPilotAccelerators";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/agentic-ai-playground" element={<AgenticAIPlayground />} />
+          <Route path="/agentic-ai-business-pilot-accelerators" element={<AgenticAIBusinessPilotAccelerators />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
